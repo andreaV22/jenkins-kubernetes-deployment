@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Pushing Image') {
       environment {
-               registryCredential = 'dockerhub-credential'
+               registryCredential = 'dockerhub-credentials'
            }
       steps{
         script {
